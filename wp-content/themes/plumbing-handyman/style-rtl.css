@@ -7779,3 +7779,35 @@ body.no-sidebar:not(.asterthemes-boxed-layout) .alignwide {
 		@media only screen and (max-width: 450px) {
 		}
 	}
+/* Progress Bar */
+#plumbing_handyman_aster_progress_bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 4px;
+  width: 0;
+  background-color: var(--secondary-color);
+  z-index: 99999;
+}
+/* Admin bar fix */
+.admin-bar #plumbing_handyman_aster_progress_bar {
+  top: 32px;
+}
+@media (max-width: 782px) {
+  .admin-bar #plumbing_handyman_aster_progress_bar {
+    top: 46px;
+  }
+}
+@media (max-width: 600px) {
+  .admin-bar #plumbing_handyman_aster_progress_bar {
+    top: 0;
+  }
+}
+/* sidebar hover effect */
+.widget-area .widget {
+   transition: all 0.4s ease;
+}
+.widget-area .widget:hover {
+   transform: translateY(-8px);
+  box-shadow: 0 0 10px #5e5e5e;
+}

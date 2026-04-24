@@ -89,3 +89,29 @@ $wp_customize->add_control(
 		'right' => __('Right', 'plumbing-handyman'),
 	),
 ));
+
+// WooCommerce Pages Product Border Radius
+$wp_customize->add_setting(
+	'plumbing_handyman_woocommerce_product_border_radius',
+	array(
+		'default'           => 3,
+		'sanitize_callback' => 'plumbing_handyman_sanitize_range_value',
+	)
+);
+$wp_customize->add_control(
+	new Plumbing_Handyman_Customize_Range_Control(
+		$wp_customize,
+		'plumbing_handyman_woocommerce_product_border_radius',
+		array(
+			'label'       => __( 'Product Border Radius Setting', 'plumbing-handyman' ),
+			'description' => __( 'Adjust the border radius of WooCommerce product boxes.', 'plumbing-handyman' ),
+			'section'     => 'plumbing_handyman_woocommerce_settings',
+			'settings'    => 'plumbing_handyman_woocommerce_product_border_radius',
+			'input_attrs' => array(
+				'min'  => 0,
+				'max'  => 50,
+				'step' => 1,
+			),
+		)
+	)
+);

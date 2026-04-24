@@ -472,3 +472,16 @@ function plumbing_handyman_topbar_padding_css(){
 
 }
 add_action('wp_enqueue_scripts','plumbing_handyman_topbar_padding_css');
+
+// WooCommerce Product Border Radius
+function plumbing_handyman_woocommerce_border_radius_css() {
+	$plumbing_handyman_radius = get_theme_mod('plumbing_handyman_woocommerce_product_border_radius', 3);
+    $plumbing_handyman_custom_css = "
+		.woocommerce ul.products li.product {
+			border-radius: {$plumbing_handyman_radius}px;
+			overflow: hidden;
+		}
+	";
+    wp_add_inline_style('plumbing-handyman-style', $plumbing_handyman_custom_css);
+}
+add_action('wp_enqueue_scripts', 'plumbing_handyman_woocommerce_border_radius_css');

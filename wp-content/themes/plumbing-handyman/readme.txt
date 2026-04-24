@@ -5,14 +5,14 @@ Tags: one-column, two-columns, three-columns, four-columns, grid-layout, custom-
 
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.4
+Stable tag: 1.6
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-The Plumbing Handyman is a modern, multipurpose WordPress theme designed specifically for professionals offering Plumbing Services. Whether you are an experienced Plumber, an Emergency Plumber, or manage a full-scale plumbing agency, this theme delivers a clean, elegant, and sophisticated online presence. Its minimal yet luxurious design ensures your website looks professional, trustworthy, and visually stunning across all devices. Built with Bootstrap, the theme is fully responsive, mobile-friendly, and Retina-ready, providing a seamless browsing experience on smartphones, tablets, and desktops. Developers will appreciate the optimized and, secure code, which contribute to a faster page load time and smooth performance. The theme is user-friendly, making it easy to set up and manage even without technical expertise. The Plumbing Handyman is ideal for showcasing Residential Plumbing and Commercial Plumbing services, including Plumbing Repair, Pipe Repair, Leak Detection, Drain Cleaning, and Sewer Cleaning. A visually appealing Banner section highlights your core services, while interactive and animated elements help capture user attention. The built-in testimonial section builds credibility by displaying real customer feedback, and the dedicated Team section allows you to introduce skilled professionals behind your business. With extensive Customization Options and advanced personalization options, you can easily tailor layouts, colors, fonts, and content to match your brand identity. The Plumbing Handyman includes powerful shortcodes, integrated social media support, and a prominent Call to Action Button (CTA) to drive inquiries and bookings. Being translation-ready and agency-friendly, this modern and beautiful theme suits both local plumbers and large service providers. Overall, it offers a secure, interactive, and stunning solution for creating a professional plumbing website.
+The Plumbing Handyman is a modern, multipurpose theme designed for plumbing service websites, professional plumbers, emergency plumbing services, plumbing contractors, and plumbing agencies looking to build a clean, trustworthy, and high-performing online presence. Its minimal yet refined design ensures a professional look across all devices, making it suitable for both local plumbers and large service providers. Built with a responsive and mobile-friendly structure, it delivers a seamless browsing experience on smartphones, tablets, and desktops. Developed with optimized and secure code, the theme ensures fast loading speed and smooth performance. It is ideal for showcasing residential plumbing services and commercial plumbing solutions, including plumbing repair, pipe repair, leak detection, drain cleaning, sewer cleaning, bathroom plumbing, and water pipe installation. A visually engaging banner section highlights core services, while interactive elements enhance user engagement. The theme includes dedicated sections for testimonials to build trust and a team showcase to introduce skilled professionals. With extensive customization options, flexible layouts, and typography controls, you can easily align the design with your brand identity. It also supports essential features like contact forms (compatible with Contact Form 7 plugin), call-to-action buttons for bookings, and social media integration. With an SEO-friendly structure and clean coding standards, The Plumbing Handyman helps improve visibility for searches like plumber near me, emergency plumbing services, and plumbing repair services, making it a reliable solution for growing a plumbing business online.
 
 == Installation ==
 
@@ -67,6 +67,18 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 * Added slider button background color option.
 * Added slider button lable color option.
 * Added slider button border color option.
+* Updated rtl file.
+* Updated pot file.
+
+= 1.5 =
+* Resolved css error.
+
+= 1.6 =
+* Updated description.
+* Added progress bar setting in customizer.
+* Added product border radius setting in customizer.
+* Added hover effect in sidebar widget.
+* Added animation on front page and product page.
 * Updated rtl file.
 * Updated pot file.
 

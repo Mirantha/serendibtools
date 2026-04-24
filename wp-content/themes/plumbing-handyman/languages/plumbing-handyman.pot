@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plumbing Handyman 1.4\n"
+"Project-Id-Version: Plumbing Handyman 1.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/plumbing-handyman\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-10T17:33:42+05:30\n"
+"POT-Creation-Date: 2026-03-27T14:27:48+05:30\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plumbing-handyman\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #. Description of the theme
 #: style.css
-msgid "The Plumbing Handyman is a modern, multipurpose WordPress theme designed specifically for professionals offering Plumbing Services. Whether you are an experienced Plumber, an Emergency Plumber, or manage a full-scale plumbing agency, this theme delivers a clean, elegant, and sophisticated online presence. Its minimal yet luxurious design ensures your website looks professional, trustworthy, and visually stunning across all devices. Built with Bootstrap, the theme is fully responsive, mobile-friendly, and Retina-ready, providing a seamless browsing experience on smartphones, tablets, and desktops. Developers will appreciate the optimized and, secure code, which contribute to a faster page load time and smooth performance. The theme is user-friendly, making it easy to set up and manage even without technical expertise. The Plumbing Handyman is ideal for showcasing Residential Plumbing and Commercial Plumbing services, including Plumbing Repair, Pipe Repair, Leak Detection, Drain Cleaning, and Sewer Cleaning. A visually appealing Banner section highlights your core services, while interactive and animated elements help capture user attention. The built-in testimonial section builds credibility by displaying real customer feedback, and the dedicated Team section allows you to introduce skilled professionals behind your business. With extensive Customization Options and advanced personalization options, you can easily tailor layouts, colors, fonts, and content to match your brand identity. The Plumbing Handyman includes powerful shortcodes, integrated social media support, and a prominent Call to Action Button (CTA) to drive inquiries and bookings. Being translation-ready and agency-friendly, this modern and beautiful theme suits both local plumbers and large service providers. Overall, it offers a secure, interactive, and stunning solution for creating a professional plumbing website."
+msgid "The Plumbing Handyman is a modern, multipurpose theme designed for plumbing service websites, professional plumbers, emergency plumbing services, plumbing contractors, and plumbing agencies looking to build a clean, trustworthy, and high-performing online presence. Its minimal yet refined design ensures a professional look across all devices, making it suitable for both local plumbers and large service providers. Built with a responsive and mobile-friendly structure, it delivers a seamless browsing experience on smartphones, tablets, and desktops. Developed with optimized and secure code, the theme ensures fast loading speed and smooth performance. It is ideal for showcasing residential plumbing services and commercial plumbing solutions, including plumbing repair, pipe repair, leak detection, drain cleaning, sewer cleaning, bathroom plumbing, and water pipe installation. A visually engaging banner section highlights core services, while interactive elements enhance user engagement. The theme includes dedicated sections for testimonials to build trust and a team showcase to introduce skilled professionals. With extensive customization options, flexible layouts, and typography controls, you can easily align the design with your brand identity. It also supports essential features like contact forms (compatible with Contact Form 7 plugin), call-to-action buttons for bookings, and social media integration. With an SEO-friendly structure and clean coding standards, The Plumbing Handyman helps improve visibility for searches like plumber near me, emergency plumbing services, and plumbing repair services, making it a reliable solution for growing a plumbing business online."
 msgstr ""
 
 #. Author of the theme
@@ -129,11 +129,11 @@ msgstr ""
 msgid "https://asterthemes.com/products/wp-theme-bundle"
 msgstr ""
 
-#: functions.php:344
+#: functions.php:359
 msgid "Demo import settings have been reset."
 msgstr ""
 
-#: functions.php:346
+#: functions.php:361
 msgid "Permission denied."
 msgstr ""
 
@@ -534,12 +534,16 @@ msgstr ""
 msgid "Slider Word"
 msgstr ""
 
-#: theme-library/customizer/front-page-options/slider.php:193
+#: theme-library/customizer/front-page-options/slider.php:170
 msgid "Slider Button Label Color"
 msgstr ""
 
-#: theme-library/customizer/front-page-options/slider.php:207
+#: theme-library/customizer/front-page-options/slider.php:184
 msgid "Slider Button Background Color"
+msgstr ""
+
+#: theme-library/customizer/front-page-options/slider.php:199
+msgid "Slider Button Border Color"
 msgstr ""
 
 #: theme-library/customizer/theme-options.php:11
@@ -1277,8 +1281,20 @@ msgstr ""
 msgid "This setting controls the Width of Site Logo"
 msgstr ""
 
-#: theme-library/customizer/theme-options/theme-options.php:324
-msgid "Show / Hide Animations"
+#: theme-library/customizer/theme-options/theme-options.php:323
+msgid "Enable / Disable Animation"
+msgstr ""
+
+#: theme-library/customizer/theme-options/theme-options.php:336
+msgid "Enable Animation"
+msgstr ""
+
+#: theme-library/customizer/theme-options/theme-options.php:347
+msgid "Enable / Disable Progress Bar"
+msgstr ""
+
+#: theme-library/customizer/theme-options/theme-options.php:359
+msgid "Enable Progress Bar"
 msgstr ""
 
 #: theme-library/customizer/theme-options/typography-setting.php:13
@@ -1319,6 +1335,14 @@ msgstr ""
 
 #: theme-library/customizer/theme-options/woocommerce-setting.php:82
 msgid "Product Sale Position"
+msgstr ""
+
+#: theme-library/customizer/theme-options/woocommerce-setting.php:106
+msgid "Product Border Radius Setting"
+msgstr ""
+
+#: theme-library/customizer/theme-options/woocommerce-setting.php:107
+msgid "Adjust the border radius of WooCommerce product boxes."
 msgstr ""
 
 #: theme-library/function-files/class-breadcrumb-trail.php:248

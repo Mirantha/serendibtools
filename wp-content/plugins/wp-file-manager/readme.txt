@@ -4,7 +4,7 @@ Tags: wp-file-manager, elfinder,file manager, ftp, wp-filemanager,file manager, 
 Requires at least: 4.0
 Tested up to: 6.9.4
 Requires PHP: 5.2.4
-Stable tag: 8.0.3
+Stable tag: 8.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,8 +77,8 @@ Key Features in the Free File Manager plugin include:
 * **File Upload Email Notifications:** Admin will get a Notification whenever a file is Uploaded.
 * **File Download Notifications:** Admin will get a Notification whenever a file is Downloaded.
 * **File Edit Email Notifications:** Admin will get a Notification whenever a file is Edited.
-* **Google Drive Integration**   drag drop, copy paste all other operations between file manager and google drive.
-* **Dropbox Integration**        drag drop, copy paste all other operations between file manager and dropbox.
+* **Google Drive Integration:**   drag drop, copy paste all other operations between file manager and google drive.
+* **Dropbox Integration:**        drag drop, copy paste all other operations between file manager and dropbox.
 
 
 > <strong>[Buy Pro Version](https://filemanagerpro.io/file-manager-pricing/?utm_source=Wordpress.org&utm_medium=Website&utm_campaign=File%20Manager%20Pro)</strong> with various features & support.
@@ -139,6 +139,8 @@ Yes, You can archive any files and folders as zip then simple download it. Pleas
 
 
 == Changelog ==
+= 8.0.4 (21st Apr, 2026) =
+* Fixed elFinder bgcolor escaping issue
 
 = 8.0.3 (24 Mar, 2026) =
 * Security fixes.

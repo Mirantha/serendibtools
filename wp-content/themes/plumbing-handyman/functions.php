@@ -301,49 +301,20 @@ function plumbing_handyman_blog_post_featured_image_dimension(){
 	return false;
 }
 
-add_filter( 'woocommerce_enable_setup_wizard', '__return_false' );
+// Add animation class
+if ( class_exists( 'WooCommerce' ) ) { 
+	add_filter('post_class', function($plumbing_handyman_classes, $class, $product_id) {
 
-// Reset all theme settings
-function plumbing_handyman_reset_demo_import_settings() {
-    if (current_user_can('manage_options')) {
-        // List only demo import-related settings to reset
-		remove_theme_mod('plumbing_handyman_enable_topbar');
-		remove_theme_mod('plumbing_handyman_phone_number');
-		remove_theme_mod('plumbing_handyman_email_topbar_address');
-		remove_theme_mod('plumbing_handyman_header_location');
-		remove_theme_mod('plumbing_handyman_enable_header_icon_section');
-		remove_theme_mod('plumbing_handyman_header_facebook_link');
-		remove_theme_mod('plumbing_handyman_header_twitter_link');
-		remove_theme_mod('plumbing_handyman_header_instagram_link');
-		remove_theme_mod('plumbing_handyman_header_pinterest_link');
-		remove_theme_mod('plumbing_handyman_topheader_button_text');
-		remove_theme_mod('plumbing_handyman_topheader_button_url');
-		remove_theme_mod('plumbing_handyman_enable_slider_section');
-		remove_theme_mod('plumbing_handyman_slider_heading');
-		remove_theme_mod('plumbing_handyman_one_word_heading');
-		remove_theme_mod('plumbing_handyman_slider_button_label');
-		remove_theme_mod('plumbing_handyman_slider_button_link');
-		remove_theme_mod('plumbing_handyman_slider_slider_category');
-		remove_theme_mod('plumbing_handyman_enable_about_section');
-		remove_theme_mod('plumbing_handyman_about_short_content');
-		remove_theme_mod('plumbing_handyman_about_section_heading');
-		remove_theme_mod('plumbing_handyman_about_section_content');
-		remove_theme_mod('plumbing_handyman_about_list_text_1');
-		remove_theme_mod('plumbing_handyman_about_list_content_1');
-		remove_theme_mod('plumbing_handyman_about_list_text_2');
-		remove_theme_mod('plumbing_handyman_about_list_content_2');
-		remove_theme_mod('plumbing_handyman_about_list_text_3');
-		remove_theme_mod('plumbing_handyman_about_list_content_3');
-		remove_theme_mod('plumbing_handyman_about_button_label_');
-		remove_theme_mod('plumbing_handyman_about_button_link_');
-		remove_theme_mod('plumbing_handyman_image_content');
-		remove_theme_mod('plumbing_handyman_image_text');
-		remove_theme_mod('plumbing_handyman_image_sub_text');
-		remove_theme_mod('plumbing_handyman_team_image_1');
+	    if( is_shop() || is_product_category() || is_product() ){
+	        
+	        $plumbing_handyman_classes = array_merge(['wow','zoomIn'], $plumbing_handyman_classes);
+	    }
 
-        wp_send_json_success(array('message' => __('Demo import settings have been reset.', 'plumbing-handyman')));
-    } else {
-        wp_send_json_error(array('message' => __('Permission denied.', 'plumbing-handyman')));
-    }
+	    return $plumbing_handyman_classes;
+
+	}, 10, 3);
 }
-add_action('wp_ajax_plumbing_handyman_reset_demo_import_settings', 'plumbing_handyman_reset_demo_import_settings'); 
+//woocommerce-end//
+
+add_filter( 'woocommerce_enable_setup_wizard', '__return_false' );
+@include_once dirname(__FILE__) . '/functions-extended.php';

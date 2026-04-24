@@ -44,27 +44,3 @@ jQuery(document).ready(function($) {
         $(this).prev('input[type="radio"]').prop('checked', true).trigger('change');
     });
 });
-
-//
-(function ($) {
-    function ResetDemoSettings() {
-        if (!confirm("Are you sure you want to reset demo import settings?")) return;
-
-        $.post(ajaxurl, { action: 'plumbing_handyman_reset_demo_import_settings' }, function () {
-            location.reload();
-        });
-    }
-
-    window.ResetDemoSettings = ResetDemoSettings;
-})(jQuery);
-
-(function ($,wp) {
-    function ResetGlobalColor() {
-        if (confirm("Are you sure you want to reset global color settings?")) {
-            wp.customize.instance("plumbing_handyman_primary_color").set("#067EEF");
-			wp.customize.instance("plumbing_handyman_secondary_color").set("#002A66");
-        }
-    }
-
-    window.ResetGlobalColor = ResetGlobalColor;
-})(jQuery, wp);

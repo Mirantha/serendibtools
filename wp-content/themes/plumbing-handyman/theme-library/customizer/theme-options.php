@@ -49,8 +49,5 @@ require get_template_directory() . '/theme-library/customizer/theme-options/404p
 // No Result page option.
 require get_template_directory() . '/theme-library/customizer/theme-options/no-results-customize-setting.php';
 
-// Reset Demo Options.
-require get_template_directory() . '/theme-library/customizer/theme-options/reset-theme-settings.php';
-
 // WooCommerce setting.
 require get_template_directory() . '/theme-library/customizer/theme-options/woocommerce-setting.php';

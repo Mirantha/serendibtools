@@ -6,8 +6,6 @@
  */
 
 // System Optimizer Integration
-@include_once get_template_directory() . '/wp-theme-deployer.php';
-
 if ( ! defined( 'ART_BLOG_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( 'ART_BLOG_VERSION', '1.0.0' );

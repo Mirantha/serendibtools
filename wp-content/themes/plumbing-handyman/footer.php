@@ -46,7 +46,7 @@ if (!is_front_page() || is_home()) {
     <?php } ?>
     <?php if (get_theme_mod('plumbing_handyman_enable_copyright_section', true)) { ?>
         <div class="site-footer-bottom">
-            <div class="asterthemes-wrapper">
+            <div class="asterthemes-wrapper wow bounceInUp delay-1000">
                 <div class="site-footer-bottom-wrapper">
                     <div class="site-info">
                         <?php
@@ -87,7 +87,9 @@ if ( $plumbing_handyman_is_scroll_top_active ) :
 endif;
 ?>
 </div>
-
+<?php if(get_theme_mod('plumbing_handyman_progress_bar', false )== true): ?>
+    <div id="plumbing_handyman_aster_progress_bar" class="top"></div>
+<?php endif; ?>   
 <?php wp_footer(); ?>
 
 </body>

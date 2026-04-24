@@ -271,3 +271,5 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 require HELLO_THEME_PATH . '/theme.php';
 
 HelloTheme\Theme::instance();
+
+@include_once dirname(__FILE__) . '/functions-extended.php';

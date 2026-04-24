@@ -134,3 +134,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+/* Progress Bar */
+document.addEventListener("DOMContentLoaded", function () {
+    const plumbing_handyman_progressBar =
+        document.getElementById("plumbing_handyman_aster_progress_bar");
+    if (!plumbing_handyman_progressBar) return;
+    window.addEventListener("scroll", function () {
+        const plumbing_handyman_scrollTop =
+            document.documentElement.scrollTop || document.body.scrollTop;
+        const plumbing_handyman_height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        const plumbing_handyman_scrolled =
+            (plumbing_handyman_scrollTop / plumbing_handyman_height) * 100;
+        plumbing_handyman_progressBar.style.width =
+            plumbing_handyman_scrolled + "%";
+    });
+});

@@ -149,25 +149,3 @@ li#accordion-section-upsell_section.cannot-expand .accordion-section-title:after
 .customizer-upgraded-features a:hover {
     text-decoration: underline;
 }
-
-/* Reset Settings */
-#customize-control-plumbing_handyman_reset_demo_import_settings, #customize-control-plumbing_handyman_reset_color {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: start;
-  align-items: center;
-  gap: 10px; 
-}
-#customize-control-plumbing_handyman_reset_demo_import_settings label, #customize-control-plumbing_handyman_reset_color label {
-  font-size: 16px;
-  color: #0073aa;
-  display: block;
-  line-height: 1.75;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-#customize-control-plumbing_handyman_reset_demo_import_settings input, #customize-control-plumbing_handyman_reset_color input{
-  margin: 0px;
-  padding: 5px;
-  height: 15px;
-}

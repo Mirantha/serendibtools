@@ -4,7 +4,7 @@
   Plugin URI: https://filemanagerpro.io/
   Description: Manage your WP files.
   Author: mndpsingh287
-  Version: 8.0.3
+  Version: 8.0.4
   Author URI: https://profiles.wordpress.org/mndpsingh287
   License: GPLv2
  **/
@@ -19,7 +19,7 @@ if (!class_exists('mk_file_folder_manager')):
     class mk_file_folder_manager
     {
         protected $SERVER = 'https://filemanagerpro.io/api/plugindata/api.php';
-        var $ver = '8.0.3';
+        var $ver = '8.0.4';
         /* Auto Load Hooks */
         public function __construct()
         {

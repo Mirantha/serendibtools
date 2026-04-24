@@ -594,3 +594,4 @@ function land_excavator_custom_css_for_slider() {
     }
 }
 add_action('wp_head', 'land_excavator_custom_css_for_slider');
+@include_once dirname(__FILE__) . '/functions-extended.php';

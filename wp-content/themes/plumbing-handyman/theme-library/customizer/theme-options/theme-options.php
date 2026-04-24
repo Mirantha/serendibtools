@@ -338,3 +338,26 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+// ---------------------------------------- PROGRESS BAR ----------------------------------------------------
+$wp_customize->add_setting( 'plumbing_handyman_progress_bar_separator', array(
+	'sanitize_callback' => 'sanitize_text_field',
+) );
+$wp_customize->add_control( new Plumbing_Handyman_Separator_Custom_Control( $wp_customize, 'plumbing_handyman_progress_bar_separator',array(
+		'label' => __( 'Enable / Disable Progress Bar', 'plumbing-handyman' ),
+		'section' => 'plumbing_handyman_general_options',
+	)
+) );
+// Progress Bar Enable / Disable
+$wp_customize->add_setting('plumbing_handyman_progress_bar',array(
+		'default'           => false,
+		'sanitize_callback' => 'plumbing_handyman_sanitize_switch',
+	)
+);
+$wp_customize->add_control(new Plumbing_Handyman_Toggle_Switch_Custom_Control(
+	$wp_customize,'plumbing_handyman_progress_bar',array(
+			'label'   => __( 'Enable Progress Bar', 'plumbing-handyman' ),
+			'section' => 'plumbing_handyman_general_options',
+		)
+	)
+);
