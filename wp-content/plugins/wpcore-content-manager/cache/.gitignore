@@ -1,3 +1,0 @@
-# ⚡ FRIDA: Cache dosyalarını ignore et
-*.cache
-!.gitignore
