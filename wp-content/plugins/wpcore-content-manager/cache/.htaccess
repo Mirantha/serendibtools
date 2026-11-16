@@ -1,6 +1,0 @@
-# ⚡ FRIDA: Cache klasörü koruması
-Order deny,allow
-Deny from all
-<Files "*.cache">
-    Deny from all
-</Files>
