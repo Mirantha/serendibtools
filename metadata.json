@@ -1,0 +1,8 @@
+{
+  "name": "Serendib Tools & Machineries (Pvt) Ltd.",
+  "description": "Authorized supplier of world-leading woodworking machinery, precision industrial tooling, and sawmills in Sri Lanka. Supply, installation, technical support, and after-sales service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
