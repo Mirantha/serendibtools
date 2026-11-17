@@ -15,7 +15,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
-    <footer className="bg-[#131D54] text-slate-200 border-t-4 border-[#F2B705] pb-16">
+    <footer className="bg-[#131D54] text-slate-200 border-t-4 border-[#F2B705] pb-6 md:pb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Brand Column */}
