@@ -95,7 +95,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-900">
+    <div className="min-h-[calc(100vh-1px)] flex flex-col bg-white text-slate-900">
       {mapsQuotaExceeded && (
         <div className="bg-amber-50 border-b border-amber-200 text-amber-900 px-4 py-2.5 text-xs md:text-sm text-center sticky top-0 z-50 shadow-sm">
           <span>
@@ -119,7 +119,7 @@ export default function App() {
         onOpenSearch={() => setSearchOpen(true)}
       />
 
-      <main id="primary" className="flex-1">
+      <main id="primary" className="flex-auto">
         {currentPage === 'home' && (
           <HomePage
             onNavigate={navigate}

@@ -15,7 +15,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
-    <footer className="bg-[#131D54] text-slate-200 border-t-4 border-[#F2B705]">
+    <footer className="bg-[#131D54] text-slate-200 border-t-4 border-[#F2B705] pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Brand Column */}
@@ -154,7 +154,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       <div className="border-t border-white/10 bg-[#0E1642]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
           <p>
-            © {new Date().getFullYear()} {COMPANY_INFO.name} All rights reserved. ||  Developed by <a href="https://creativeidea.lk" target="_blank">CreativeIDEA</a>
+            &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved. <span className="hidden sm:inline">||</span> <span className="block sm:inline mt-1 sm:mt-0">Developed by <a href="https://creativeidea.lk" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#F2B705] transition-colors">CreativeIDEA</a></span>
           </p>
           <p>Precision Woodworking Machinery · Sawmills · Industrial Tooling</p>
         </div>
